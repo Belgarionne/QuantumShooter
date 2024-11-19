@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "configurePresets": [
+      {
+        "name": "Windows",
+        "generator": "Visual Studio 17 2022",
+        "binaryDir": "${sourceDir}/build",
+        "environment": {
+          "VCPKG_ROOT": "C:/Program Files/Vcpkg"
+        },
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_EXPORT_COMPILE_COMMANDS": "YES",
+          "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+        }
+      }
+    ]
+  }
